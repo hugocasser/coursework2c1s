@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp1.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="RegisterWindow" ResizeMode="CanMinimize" Height="180" Width="250" Background="GhostWhite">
+    
+    <Grid>
+        
+        <StackPanel>
+            <TextBox x:Name="Host"  Text="Host" ></TextBox>
+            <TextBox x:Name="Port"  Text="Port"></TextBox>
+            <TextBox x:Name="Name"  Text="Name"></TextBox>
+            <Button x:Name="Ok"  Height="20" Width="40" Margin="0 10 " Content="Ok" Click="Ok_OnClick"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

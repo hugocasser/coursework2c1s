@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="Resourses\JetBrainsMono-2.242\fonts\ttf\JetBrainsMono-Regular.ttf" />
+      <None Remove="Fonts\JetBrainsMonoNL-Regular.ttf" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="font\JetBrainsMono-Regular.ttf" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="font" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Resource Include="JetBrainsMono-Regular.ttf" />
+    </ItemGroup>
+
+</Project>

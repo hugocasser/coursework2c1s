@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp1.ChatWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="ChatWindow"  ResizeMode="CanMinimize" Height="486" Width="615" Background="Black">
+    
+    <Grid>
+       <ListBox x:Name ="Chat" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True"  BorderThickness = "2 2 2 2 " BorderBrush="Black" Width="600" Height="350"  Margin="0" Panel.ZIndex="1" VerticalAlignment="Top" Background="GhostWhite">
+       </ListBox>
+       <TextBox  x:Name="Input" BorderThickness = "2"  Panel.ZIndex="0" Width="600" Margin = "0 0 0 1" Height="100" VerticalAlignment="Bottom">
+       </TextBox>
+       <Button Height = "30" Width="70"   HorizontalAlignment="Right" Panel.ZIndex="2" Content="Send" Margin = "0 350 0 1" Click="Send_OnClick" VerticalAlignment="Bottom" ></Button>
+   </Grid>
+</Window>
